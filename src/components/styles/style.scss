@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    text-decoration: none;
+    border: none;
+}
+
+main {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+
+
+    & > .container {
+    background: #505050;
+    box-shadow: 5px 5px 10px #202020, -5px -5px 10px #464646;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+        & > .btn {
+            width: 300px;
+            height: 200px;
+            border-radius: 25px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 30px;
+            margin: 25px;
+        }
+    }
+
+    & > .block_write {
+        width: 90%;
+        min-height: 90vh;
+        background: #505050;
+        box-shadow: 5px 5px 10px #202020, -5px -5px 10px #464646;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        & > .btn_back {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        & > .slide_word {
+            & > .active {
+                background: #fff;
+                color: #000;
+                box-shadow: 5px 5px 10px #6e6e6e, -5px -5px 10px #757575;
+            }
+            & > button {
+                padding: 12px 15px;
+                margin: 10px;
+                background: #333;
+                color: #fff;
+                cursor: pointer;
+                border-radius: 5px;
+                box-shadow: 5px 5px 10px #202020, -5px -5px 10px #464646;
+            }
+        }
+        & > .word {
+            color: #fff;
+            font-size: 55px;
+        }
+        & > .ds > .translationAnswer, .translation {
+            color: #fff;
+            font-size: 35px;
+            margin: 0 5px;
+        }
+        & > .ds {
+            display: flex;
+        }
+        & > .block_answer {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            & > input {
+                width: 40%;
+                height: 60px;
+                text-align: center;
+                font-size: 30px;
+                border-radius: 20px;
+                background: #333;
+                box-shadow: 5px 5px 10px #202020, -5px -5px 10px #464646;
+                color: #fff;
+            }
+            & > .result_btn {
+                padding: 12px 20px;
+                font-size: 25px;
+                border-radius: 20px;
+                cursor: pointer;
+                margin-top: 30px;
+            }
+            & > div {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                & > button {
+                    padding: 12px 20px;
+                    font-size: 25px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    margin: 30px;
+                }
+            }
+        }
+    }
+}
+
+.btn__blue {
+    background: linear-gradient(270deg, #61E3FF 0%, #FFFFFF 100%);
+}
+.btn__green {
+    background: linear-gradient(270deg, #56FF9A 0%, #FFFFFF 100%);
+}
+.btn__red {
+    background: linear-gradient(270deg, #FF6565 0%, #FFFFFF 100%);
+}
+
+table {
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #FF6565;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+@media screen and (max-width: 990px) {
+    main > .block_write > .block_answer {
+        & > input {
+            width: 60%;
+        }
+        & > div > button {
+            margin: 30px 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    main > .block_write {
+        & > .slide_word {
+            & > button {
+                padding: 5px 9px;
+                margin: 6px;
+                background: #333;
+                color: #fff;
+                cursor: pointer;
+                border-radius: 5px;
+                box-shadow: 5px 5px 10px #202020, -5px -5px 10px #464646;
+            }
+    }
+    }
+    main > .block_write > .block_answer {
+        & > input {
+            width: 80%;
+        }
+        & > div > button {
+            margin: 20px 15px 0;
+        }
+    }
+    table {
+        padding: 0;
+        & > th, td {
+            padding: 2px;
+            font-size: 14px;
+        }
+    }
+}
+
+
+
