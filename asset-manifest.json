@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/English-study/static/css/main.26bf18be.css",
+    "main.js": "/English-study/static/js/main.a850ec60.js",
+    "index.html": "/English-study/index.html",
+    "main.26bf18be.css.map": "/English-study/static/css/main.26bf18be.css.map",
+    "main.a850ec60.js.map": "/English-study/static/js/main.a850ec60.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26bf18be.css",
+    "static/js/main.a850ec60.js"
+  ]
+}
